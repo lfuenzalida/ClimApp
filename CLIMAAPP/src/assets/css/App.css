@@ -1,5 +1,5 @@
 body {
-    background-color: #5e5e5e;
+    background-color: #ffffffff;
 }
 
 .App{
@@ -7,5 +7,77 @@ body {
 }
 
 .input-group{
-    width: 40%;
+    width: 80%;
 }
+
+.card{
+    max-width: 80%;
+}
+
+.card-title{
+    position: absolute;
+    padding: 20px;
+}
+
+.card-date{
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 60px;
+
+}
+
+.card-temp{
+    position: absolute;
+    padding-left: 20px;
+    margin-top: 260px;
+    font-size: 50px;
+}
+
+.card-desc{
+    position: absolute;
+    padding-left: 20px ;
+    margin-top: 315px;
+    font-size: xx-small;
+}
+/* .col-md-4 .fondo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 140px ;
+    height: 285px;
+    width: 180px;
+    
+} */
+
+.col-md-8{
+    background-color: aliceblue;
+}
+
+
+
+.col-md-8 .card-text{
+    text-align: start;
+    font-size: 25px;
+    
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card-day {
+    /* color: aliceblue; */
+    flex-basis: calc(20% - 20px); /* Ajusta el ancho de cada día según el número de días que quieras mostrar por fila */
+    margin: 10px;
+    padding: 10px;
+    /* background-color: #5e5e5e; */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .card-icon {
+    width: 50px; /* Ajusta el tamaño del icono según tus necesidades */
+    height: 50px;
+    margin-bottom: 1px;
+  }

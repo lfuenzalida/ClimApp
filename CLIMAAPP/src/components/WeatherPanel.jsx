@@ -8,7 +8,8 @@ const WeatherPanel = () =>{
     let urlWeather ="http://api.weatherapi.com/v1/current.json?key=fad8177251824d2b9f2165217231407&aqi=no&lang=es";
     let cityurl = "&q=";
 
-    let urlForecast = "http://api.weatherapi.com/v1/forecast.json?key=fad8177251824d2b9f2165217231407&days=1&aqi=no&alerts=no&lang=esp";
+    let urlForecast = "http://api.weatherapi.com/v1/forecast.json?key=fad8177251824d2b9f2165217231407&days=5&aqi=no&alerts=no&lang=esp";
+
 
     const [weather, setWeather] = useState([]);
     const [forecast, setForecast] = useState([]);
@@ -47,7 +48,6 @@ const WeatherPanel = () =>{
         }).then((forecastData)=>{
             console.log(forecastData);
             setForecast(forecastData);
-
             setLoading(false);
             setShow(true);
 
